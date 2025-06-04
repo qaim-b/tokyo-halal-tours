@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    background-color: #f9fafb;
+    background: linear-gradient(to bottom, #e8f6ff 0%, #ffffff 100%);
     color: #333;
     line-height: 1.6;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1506533524512-0287f41e46a1?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    background: linear-gradient(rgba(0,153,255,0.5), rgba(0,153,255,0.2)), url('https://images.unsplash.com/photo-1506533524512-0287f41e46a1?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 5rem 1rem 6rem;
@@ -20,7 +20,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 123, 255, 0.6);
     backdrop-filter: blur(6px);
     border-radius: 3rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc33;
+    color: #55b7ff;
 }
 
 .hero-text {
@@ -58,15 +58,16 @@ nav a:hover {
     font-size: 3.5rem;
     font-family: 'Pacifico', cursive;
     text-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    background: linear-gradient(45deg, #55b7ff, #1e88e5);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 h2 {
-    color: #0a4a45;
+    color: #1e88e5;
     margin-top: 2rem;
     font-family: 'Merriweather', serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 main {
@@ -103,6 +104,12 @@ main {
     overflow: hidden;
     max-width: 280px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tour:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .tour img {
@@ -113,7 +120,8 @@ main {
 
 .tour h3 {
     margin: 0.5rem 0;
-    color: #0a4a45;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #1e88e5;
 }
 
 .tour p {
@@ -129,7 +137,7 @@ main {
 
 .testimonials blockquote {
     background: #f0f7f6;
-    border-left: 4px solid #0a4a45;
+    border-left: 4px solid #1e88e5;
     margin: 0;
     padding: 1rem;
     font-style: italic;
@@ -166,12 +174,18 @@ main {
 .contact-form button {
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #0a4a45;
+    background-color: #1e88e5;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.contact-form button:hover {
+    background-color: #55b7ff;
+}
+
 
 .contact-info {
     text-align: center;
@@ -179,7 +193,7 @@ main {
 }
 
 footer {
-    background-color: #0a4a45;
+    background-color: #1e88e5;
     color: white;
     text-align: center;
     padding: 1rem 0;
