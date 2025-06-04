@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-mqLJ0L3D8Kv3cXn+RWh3RR4wRGNWZCOdXT/NMnHjSgHV4Ffi/+P2Djk5FiNh0IJGUbBYOORLxm652L0lzY4kEA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
     <header class="hero">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#tours">Tours</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -33,6 +35,27 @@
                 life &mdash; we know the best spots that often remain hidden from visitors.</p>
             <p>Our goal is to make travel easier for Muslim travelers by guiding you to authentic
                 halal restaurants, prayer spaces, and memorable cultural sights.</p>
+        </section>
+
+        <section id="promise">
+            <h2>Why Choose Us</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-solid fa-hands-praying" aria-hidden="true"></i>
+                    <h3>Halal Assurance</h3>
+                    <p>Every stop is carefully vetted so you can focus on enjoying the journey.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                    <h3>Local Expertise</h3>
+                    <p>Guided by residents fluent in Japanese culture and language.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                    <h3>Serene Experiences</h3>
+                    <p>Relaxing itineraries ideal for families and individuals alike.</p>
+                </div>
+            </div>
         </section>
 
         <section id="tours">
@@ -79,6 +102,18 @@
             </div>
         </section>
 
+        <section id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>Do you cater to vegetarians?</summary>
+                <p>Yes, many of our recommended halal restaurants offer vegetarian options.</p>
+            </details>
+            <details>
+                <summary>How far in advance should I book?</summary>
+                <p>Booking a few weeks ahead is ideal, especially for custom journeys.</p>
+            </details>
+        </section>
+
         <section id="contact">
             <h2>Contact Us</h2>
             <form class="contact-form">
@@ -101,7 +136,13 @@
     </main>
 
     <footer>
-        &copy; 2025 Tokyo Halal Tours
+        <p>&copy; 2025 Tokyo Halal Tours</p>
+        <div class="social">
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
     </footer>
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
+    <script src="script.js"></script>
 </body>
 </html>
