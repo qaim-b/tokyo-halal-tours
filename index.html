@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokyo Halal Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="hero">
-        <h1>Tokyo Halal Tours</h1>
-        <p>Discover the hidden halal gems of Japan with a friendly local couple.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Tokyo Halal Tours</h1>
+            <p>Discover the hidden halal gems of Japan with a friendly local couple.</p>
+        </div>
     </header>
 
     <main>
@@ -22,10 +35,25 @@
                 halal restaurants, prayer spaces, and memorable cultural sights.</p>
         </section>
 
-        <section id="availability">
-            <h2>Availabilities</h2>
-            <p>We operate custom tours every weekend and on select weekdays. Contact us to reserve
-                a time that fits your schedule.</p>
+        <section id="tours">
+            <h2>Tour Packages</h2>
+            <div class="tours">
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1568082694163-350b2d16eaf7?auto=format&fit=crop&w=800&q=80" alt="Tokyo skyline" />
+                    <h3>Tokyo Essentials</h3>
+                    <p>One-day introduction to must-see halal spots around the city.</p>
+                </div>
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1500315331616-db33f0c0bd61?auto=format&fit=crop&w=800&q=80" alt="Kyoto temples" />
+                    <h3>Tokyo &amp; Beyond</h3>
+                    <p>Extend your adventure with a visit to nearby historical towns.</p>
+                </div>
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80" alt="Japanese garden" />
+                    <h3>Custom Journey</h3>
+                    <p>Tailor-made itinerary for your interests and schedule.</p>
+                </div>
+            </div>
         </section>
 
         <section id="gallery">
@@ -37,10 +65,38 @@
             </div>
         </section>
 
+        <section id="testimonials">
+            <h2>What Travelers Say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    "An unforgettable experience with hosts who truly care about halal needs!"
+                    <cite>&mdash; Aisha from Malaysia</cite>
+                </blockquote>
+                <blockquote>
+                    "They showed me places I would have never found on my own. Highly recommended."
+                    <cite>&mdash; Omar from UAE</cite>
+                </blockquote>
+            </div>
+        </section>
+
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@tokyohalaltours.com">info@tokyohalaltours.com</a></p>
-            <p>Phone: +81-90-1234-5678</p>
+            <form class="contact-form">
+                <label>
+                    Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+            <p class="contact-info">Or email us directly at <a href="mailto:info@tokyohalaltours.com">info@tokyohalaltours.com</a></p>
         </section>
     </main>
 
