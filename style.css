@@ -16,10 +16,14 @@ body {
 
 nav {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 nav ul {
@@ -34,7 +38,15 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc33;
 }
 
 .hero-text {
@@ -43,8 +55,12 @@ nav a {
 
 .hero h1 {
     margin: 0;
-    font-size: 3rem;
-    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h2 {
